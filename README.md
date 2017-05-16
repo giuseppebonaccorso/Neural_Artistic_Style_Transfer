@@ -6,7 +6,7 @@ See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_tr
 The usage
 
 # Examples
-<table>
+<table width="100%">
 <tr>
 <td>
 <p align="center">
