@@ -21,7 +21,7 @@ The usage
 <tr>
 <td width="auto">
 <p align="center">
-<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Cezanne.jpg" align="center" height="600" width="338">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Monet.jpg" align="center" height="600" width="338">
 </p>
 <p align="center">Cezanne</p>
 </td>
