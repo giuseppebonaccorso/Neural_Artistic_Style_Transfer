@@ -4,3 +4,6 @@ See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_tr
 
 # Usage
 The usage
+
+# Examples
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Cezanne.jpg" align="center" height="30%" width="auto">
