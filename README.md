@@ -24,14 +24,14 @@ Some usage examples:
 <br/><br/>
 # Code snippet
 '''python
-neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
-                                 style_image_filepath='img\\Magritte.jpg',
-                                 destination_folder='\\destination_folder',
+neural_styler = NeuralStyler(picture_image_filepath=\'img\\GB.jpg\',
+                                 style_image_filepath=\'img\\Magritte.jpg\',
+                                 destination_folder=\'\\destination_folder\',
                                  alpha_picture=0.4,
                                  alpha_style=0.6,
                                  verbose=True)
 
-neural_styler.fit(canvas='picture', optimization_method='L-BFGS-B')
+neural_styler.fit(canvas=\'picture\', optimization_method=\'L-BFGS-B\')
 '''
 
 # Examples
