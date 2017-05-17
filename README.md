@@ -22,8 +22,9 @@ Some usage examples:
 <i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1' (both VGG16 and VGG19)</i>
 </p>
 <br/><br/>
+
 # Code snippet
-'''python
+```
 neural_styler = NeuralStyler(picture_image_filepath=\'img\\GB.jpg\',
                                  style_image_filepath=\'img\\Magritte.jpg\',
                                  destination_folder=\'\\destination_folder\',
@@ -32,7 +33,7 @@ neural_styler = NeuralStyler(picture_image_filepath=\'img\\GB.jpg\',
                                  verbose=True)
 
 neural_styler.fit(canvas=\'picture\', optimization_method=\'L-BFGS-B\')
-'''
+```
 
 # Examples
 <table width="100%" align="center">
