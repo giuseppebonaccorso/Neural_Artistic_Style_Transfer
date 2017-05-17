@@ -11,16 +11,27 @@ There are three possibile canvas setup:
 </ul>
 <p>
 Some usage examples:
-<br/>
-Picture and style over random:
+<br/><br/>
+<b>Picture and style over random:</b><br/>
 canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1' (both VGG16 and VGG19)
 <br/>        
-Style over picture:
+<b>Style over picture:</b><br/>
 canvas='picture', alpha_style=0.0025, alpha_picture=1.0, picture_layer='block4_conv1' (both VGG16 and VGG19)
 <br/>
-Picture over style:
+<b>Picture over style:</b><br/>
 canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1' (both VGG16 and VGG19)
 </p>
+<br/><br/>
+```python
+neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
+                                 style_image_filepath='img\\Magritte.jpg',
+                                 destination_folder='\\destination_folder',
+                                 alpha_picture=0.4,
+                                 alpha_style=0.6,
+                                 verbose=True)
+
+neural_styler.fit(canvas='picture', optimization_method='L-BFGS-B')
+```
 
 # Examples
 <table width="100%" align="center">
