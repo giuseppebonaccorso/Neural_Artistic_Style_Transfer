@@ -1,7 +1,7 @@
 # Neural artistic style tranfer
 <img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000"/><br/>
 
-Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, <i>"A Neural Algorithm of Artistic Style"</i>, arXiv:1508.06576<br/>
+Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, <i>"<a href="https://arxiv.org/abs/1508.06576" target="_blank">A Neural Algorithm of Artistic Style</a>"</i>, arXiv:1508.06576<br/>
 See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py<br/>
 See some examples on: https://www.bonaccorso.eu/2016/11/13/neural-artistic-style-transfer-experiments-with-keras/
 
