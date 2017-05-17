@@ -1,5 +1,5 @@
 # Neural artistic style tranfer
-[license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)
+<img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000"/><br/>
 
 Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, "A Neural Algorithm of Artistic Style", arXiv:1508.06576<br/>
 See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py
