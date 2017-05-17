@@ -1,4 +1,6 @@
 # Neural artistic style tranfer
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]
+
 Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, "A Neural Algorithm of Artistic Style", arXiv:1508.06576<br/>
 See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py
 
@@ -10,30 +12,37 @@ There are three possibile canvas setup:
 <li><b>Random from style</b>: The canvas is filled with a random pattern generated starting from the style image</li>
 </ul>
 <p>
-Some usage examples:
+Some usage examples (both VGG16 and VGG19):
 <br/><br/>
 <b>Picture and style over random:</b><br/>
-<i>canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1' (both VGG16 and VGG19)</i>
+<i>canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1'</i>
 <br/>        
 <b>Style over picture:</b><br/>
-<i>canvas='picture', alpha_style=0.0025, alpha_picture=1.0, picture_layer='block4_conv1' (both VGG16 and VGG19)</i>
+<i>canvas='picture', alpha_style=0.0025, alpha_picture=1.0, picture_layer='block4_conv1'</i>
 <br/>
 <b>Picture over style:</b><br/>
-<i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1' (both VGG16 and VGG19)</i>
+<i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1'</i>
 </p>
-<br/><br/>
 
 # Code snippet
 ```
-neural_styler = NeuralStyler(picture_image_filepath=\'img\\GB.jpg\',
-                                 style_image_filepath=\'img\\Magritte.jpg\',
-                                 destination_folder=\'\\destination_folder\',
+neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
+                                 style_image_filepath='img\\Magritte.jpg',
+                                 destination_folder='\\destination_folder',
                                  alpha_picture=0.4,
                                  alpha_style=0.6,
                                  verbose=True)
 
-neural_styler.fit(canvas=\'picture\', optimization_method=\'L-BFGS-B\')
+neural_styler.fit(canvas='picture', optimization_method='L-BFGS-B')
 ```
+
+# Requirements
+<ul>
+<li>Python 2.7-3.5</li>
+<li>Keras</li>
+<li>Theano/Tensorflow</li>
+<li>SciPy</li>
+</ul>
 
 # Examples
 <table width="100%" align="center">
