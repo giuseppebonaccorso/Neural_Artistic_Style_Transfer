@@ -2,8 +2,8 @@
 <img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000"/><br/>
 
 Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, <i>"A Neural Algorithm of Artistic Style"</i>, arXiv:1508.06576<br/>
-See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py<b7>
-See some experiments on: https://www.bonaccorso.eu/2016/11/13/neural-artistic-style-transfer-experiments-with-keras/
+See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py<br/>
+See some examples on: https://www.bonaccorso.eu/2016/11/13/neural-artistic-style-transfer-experiments-with-keras/
 
 ## Usage
 There are three possibile canvas setup:
