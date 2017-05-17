@@ -13,15 +13,16 @@ There are three possibile canvas setup:
 Some usage examples:
 <br/><br/>
 <b>Picture and style over random:</b><br/>
-canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1' (both VGG16 and VGG19)
+<i>canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1' (both VGG16 and VGG19)</i>
 <br/>        
 <b>Style over picture:</b><br/>
-canvas='picture', alpha_style=0.0025, alpha_picture=1.0, picture_layer='block4_conv1' (both VGG16 and VGG19)
+<i>canvas='picture', alpha_style=0.0025, alpha_picture=1.0, picture_layer='block4_conv1' (both VGG16 and VGG19)</i>
 <br/>
 <b>Picture over style:</b><br/>
-canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1' (both VGG16 and VGG19)
+<i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1' (both VGG16 and VGG19)</i>
 </p>
 <br/><br/>
+# Code snippet
 ```python
 neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
                                  style_image_filepath='img\\Magritte.jpg',
