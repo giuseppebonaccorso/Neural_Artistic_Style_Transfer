@@ -3,7 +3,24 @@ Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, "A Neural Algorith
 See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py
 
 # Usage
-The usage
+There are three possibile canvas setup:
+<ul>
+<li><b>Picture</b>: The canvas is filled with the original picture</li>
+<li><b>Style</b>: The canvas is filled with the style image (resized to match picture dimensions)</li>
+<li><b>Random from style</b>: The canvas is filled with a random pattern generated starting from the style image</li>
+</ul>
+<p>
+Some usage examples:
+<br/>
+Picture and style over random:
+canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1' (both VGG16 and VGG19)
+<br/>        
+Style over picture:
+canvas='picture', alpha_style=0.0025, alpha_picture=1.0, picture_layer='block4_conv1' (both VGG16 and VGG19)
+<br/>
+Picture over style:
+canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1' (both VGG16 and VGG19)
+</p>
 
 # Examples
 <table width="100%" align="center">
@@ -60,7 +77,7 @@ The usage
 <p align="center">
 <img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Mondrian.jpg" align="center" height="600" width="338">
 </p>
-<p align="center"><b>De Chirico</b></p>
+<p align="center"><b>Mondrian</b></p>
 </td>
 </tr>
 </table>
