@@ -12,7 +12,7 @@ There are three possibile canvas setup:
 <li><b>Random from style</b>: The canvas is filled with a random pattern generated starting from the style image</li>
 </ul>
 <p>
-Some usage examples (both VGG16 and VGG19):
+Some usage examples (both with VGG16 and VGG19):
 <br/><br/>
 <b>Picture and style over random:</b><br/>
 <i>canvas='random_from_style', alpha_style=1.0, alpha_picture=0.25, picture_layer='block4_conv1'</i>
@@ -24,7 +24,7 @@ Some usage examples (both VGG16 and VGG19):
 <i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1'</i>
 </p>
 
-## Code snippet
+## Code snippets
 ```
 neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
                                  style_image_filepath='img\\Magritte.jpg',
@@ -34,6 +34,22 @@ neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
                                  verbose=True)
 
 neural_styler.fit(canvas='picture', optimization_method='L-BFGS-B')
+```
+
+```
+neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
+                                 style_image_filepath='img\\Magritte.jpg',
+                                 destination_folder='\\destination_folder',
+                                 alpha_picture=0.25,
+                                 alpha_style=1.0,
+                                 picture_layer='block4_conv1',
+                                 style_layers=('block1_conv1',
+                                               'block2_conv1',
+                                               'block3_conv1',
+                                               'block4_conv1',
+                                               'block5_conv1'))
+                                               
+neural_styler.fit(canvas='random_from_style', optimization_method='CG')
 ```
 
 ## Requirements
