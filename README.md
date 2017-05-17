@@ -1,10 +1,10 @@
-## Neural artistic style tranfer
+# Neural artistic style tranfer
 <img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000"/><br/>
 
 Based on: Leon A. Gatys, Alexander S. Ecker, Matthias Bethge, <i>"A Neural Algorithm of Artistic Style"</i>, arXiv:1508.06576<br/>
 See also: https://github.com/fchollet/keras/blob/master/examples/neural_style_transfer.py
 
-# Usage
+## Usage
 There are three possibile canvas setup:
 <ul>
 <li><b>Picture</b>: The canvas is filled with the original picture</li>
@@ -24,7 +24,7 @@ Some usage examples (both VGG16 and VGG19):
 <i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1'</i>
 </p>
 
-# Code snippet
+## Code snippet
 ```
 neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
                                  style_image_filepath='img\\Magritte.jpg',
@@ -36,7 +36,7 @@ neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
 neural_styler.fit(canvas='picture', optimization_method='L-BFGS-B')
 ```
 
-# Requirements
+## Requirements
 <ul>
 <li>Python 2.7-3.5</li>
 <li>Keras</li>
@@ -44,7 +44,7 @@ neural_styler.fit(canvas='picture', optimization_method='L-BFGS-B')
 <li>SciPy</li>
 </ul>
 
-# Examples
+## Examples
 <table width="100%" align="center">
 <tr>
 <td width="auto">
