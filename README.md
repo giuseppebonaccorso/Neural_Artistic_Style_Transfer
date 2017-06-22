@@ -62,7 +62,7 @@ neural_styler.fit(canvas='random_from_style', optimization_method='CG')
 </ul>
 
 ## Examples
-### (With different settings and optimization algorithms)
+(With different settings and optimization algorithms)
 <table width="100%" align="center">
 <tr>
 <td width="auto">
@@ -123,13 +123,13 @@ neural_styler.fit(canvas='random_from_style', optimization_method='CG')
 <tr>
 <td width="auto">
 <p align="center">
-<img src="	https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Van+Gogh.jpg" align="center" height="600" width="338">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Van+Gogh.jpg" align="center" height="600" width="338">
 </p>
 <p align="center"><b>Van Gogh</b></p>
 </td>
 <td width="auto">
 <p align="center">
-<img src="	https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Schiele.jpg" align="center" height="600" width="338">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Schiele.jpg" align="center" height="600" width="338">
 </p>
 <p align="center"><b>Schiele</b></p>
 </td>
