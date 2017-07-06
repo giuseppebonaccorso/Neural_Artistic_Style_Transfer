@@ -245,7 +245,7 @@ class NeuralStyler(object):
 
         print('Starting optimization with method: %r' % optimization_method)
 
-        for _ in xrange(iterations):
+        for _ in range(iterations):
             self.iteration += 1
 
             if self.verbose:
