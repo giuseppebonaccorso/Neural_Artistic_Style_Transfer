@@ -53,14 +53,6 @@ neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
 neural_styler.fit(canvas='random_from_style', optimization_method='CG')
 ```
 
-## Requirements
-<ul>
-<li>Python 2.7-3.5</li>
-<li>Keras</li>
-<li>Theano/Tensorflow</li>
-<li>SciPy</li>
-</ul>
-
 ## Examples
 (With different settings and optimization algorithms)
 <table width="100%" align="center">
@@ -154,13 +146,21 @@ The composite loss function isnt't "free" to maximize the norm like in <a href="
 <tr>
 <td width="auto">
 <p align="center">
-<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Cezanne.jpg" align="center" height="600" width="338">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Tubinga.jpg" align="center" width="400">
 </p>
 </td>
 <td width="auto">
 <p align="center">
-<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Magritte.jpg" align="center" height="600" width="338">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Tubinga_dream.jpg" align="center" width="400">
 </p>
 </td>
 </tr>
 </table>
+
+## Requirements
+<ul>
+<li>Python 2.7-3.5</li>
+<li>Keras</li>
+<li>Theano/Tensorflow</li>
+<li>SciPy</li>
+</ul>
