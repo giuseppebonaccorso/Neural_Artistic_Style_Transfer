@@ -135,3 +135,32 @@ neural_styler.fit(canvas='random_from_style', optimization_method='CG')
 </td>
 </tr>
 </table>
+
+## Mixing style transfer and deep dreams
+I'm still working on some experiments based on loss function which tries to maximize the L2 norm of the last convolutional block (layers 1 and 2). I've excluded those from the style_layers tuple and tuned the parameters to render a "dream" together with a styled image. You can try the following snippet:
+```
+# Dream loss function
+dream_loss_function = -5.0*K.sum(K.square(convnet.get_layer('block5_conv1').output)) + \
+                      -2.5*K.sum(K.square(convnet.get_layer('block5_conv2').output))
+
+# Composite loss function
+composite_loss_function = (self.alpha_picture * picture_loss_function) + \
+                          (self.alpha_style * style_loss_function) + \
+                          dream_loss_function
+```
+The composite loss function isnt't "free" to maximize the norm like in <a href="https://github.com/giuseppebonaccorso/keras_deepdream">Keras DeepDream</a>, because the MSE with the gramian terms forces the filters to get similar to the style, however, it's possible to obtain interesting results. The following pictures show the famous Tübingen styled with a Braque painting and forced to render "random" elements (they're similar to animal heads and eyes) like in a dream:
+
+<table width="100%" align="center">
+<tr>
+<td width="auto">
+<p align="center">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Cezanne.jpg" align="center" height="600" width="338">
+</p>
+</td>
+<td width="auto">
+<p align="center">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Magritte.jpg" align="center" height="600" width="338">
+</p>
+</td>
+</tr>
+</table>
