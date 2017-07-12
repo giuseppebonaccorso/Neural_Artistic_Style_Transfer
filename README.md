@@ -25,6 +25,8 @@ Some usage examples (both with VGG16 and VGG19):
 <i>canvas='style', alpha_style=0.001, alpha_picture=1.0, picture_layer='block5_conv1'</i>
 </p>
 
+For a mix of style transfer and deepdream generation, see the examples below.
+
 ## Code snippets
 ```
 neural_styler = NeuralStyler(picture_image_filepath='img\\GB.jpg',
