@@ -171,7 +171,7 @@ dream_loss_function = -10.0*K.sum(K.square(convnet.get_layer('block5_conv1').out
                       -5.0*K.sum(K.square(convnet.get_layer('block5_conv2').output))
 ```
 
-(Original image by Manfred Brueckels - Own work, CC BY-SA 3.0, <a href=https://commons.wikimedia.org/w/index.php?curid=6937538">https://commons.wikimedia.org/w/index.php?curid=6937538</a>)
+(Original image by Manfred Brueckels - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=6937538)
 
 <table width="100%" align="center">
 <tr>
