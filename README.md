@@ -157,6 +157,38 @@ The composite loss function isnt't "free" to maximize the norm like in <a href="
 </tr>
 </table>
 
+This example, instead, has been created using a VGG19 with a Cezanne painting and:
+```
+style_layers=('block1_conv1',
+              'block2_conv1',
+              'block3_conv1',
+              'block4_conv1',
+              'block5_conv1',
+              'block5_conv2')
+              
+# Dream loss function
+dream_loss_function = -10.0*K.sum(K.square(convnet.get_layer('block5_conv1').output)) + \
+                      -5.0*K.sum(K.square(convnet.get_layer('block5_conv2').output))
+```
+
+(Original image by Manfred Brueckels - Own work, CC BY-SA 3.0, <a href=https://commons.wikimedia.org/w/index.php?curid=6937538">https://commons.wikimedia.org/w/index.php?curid=6937538</a>)
+
+<table width="100%" align="center">
+<tr>
+<td width="auto">
+<p align="center">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Park.jpg" align="center" width="400">
+</p>
+</td>
+<td width="auto">
+<p align="center">
+<img src="https://s3-us-west-2.amazonaws.com/neural-style-transfer-demo/Park_Dream.jpg" align="center" width="400">
+</p>
+</td>
+</tr>
+</table>
+
+
 ## Requirements
 <ul>
 <li>Python 2.7-3.5</li>
